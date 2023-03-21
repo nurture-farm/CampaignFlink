@@ -1,0 +1,1 @@
+./target/CampaignFlinkJob-1.0-SNAPSHOT.jar campaign-flink-job

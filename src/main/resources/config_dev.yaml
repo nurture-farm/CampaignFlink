@@ -1,0 +1,13 @@
+job.name = USER_EVENTS_WINDOWING_JOB
+
+flink.checkpoint.storage = s3://dummy-event-checkpoint-bucket/flink/checkpoints-dev
+flink.checkpoint.interval = 300000
+
+flink.window.size = 600
+flink.window.allowed-lateness = 300
+flink.window.idleness = 600
+
+flink.source.kafka.bootstrap.servers = localhost:9092
+flink.source.kafka.topic = user_click_events
+flink.source.kafka.group = campaign_flink
+flink.sink.path = s3://dummy-event-bucket-stage/flink-dev/
